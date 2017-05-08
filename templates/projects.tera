@@ -1,0 +1,84 @@
+{% extends "shared" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">{% include "css/projects" %}</style>
+{% endblock head %}
+
+{% block content %}
+  <h2>Active</h2>
+  <ul>
+    <li class="project-entry">
+      <a href="/">zentner.io</a>:
+      You're reading it right now. Mostly used to list projects ;P
+    </li>
+    <li class="project-entry">
+      <a href="clayr">clayr</a>:
+      A program for sculpting tetrahedral meshes in VR.
+    </li>
+    <li class="project-entry">
+      <a href="rlog">rlog</a>:
+      Datalog library in Rust.
+    </li>
+    <li class="project-entry">
+      <a href="blank">blank</a>:
+      System which learns the rules of games by example.
+    </li>
+    <li class="project-entry">
+      <a href="video-space">video-space</a>:
+      Random experiments involving deep neural networks, autoencoders, and motion prediction.
+    </li>
+  </ul>
+  <h2>Future</h2>
+  <ul>
+    <li class="project-entry">
+      dist-data:
+      A library and set of protocols for implementing eventually consistent distributed data structures.
+    </li>
+    <li class="project-entry">
+      chat:
+      Everyone seems to have made a chat app by now, so I guess I'm behind in the game.
+    </li>
+  </ul>
+  <h2>Dormant</h2>
+  <ul>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/NDL3">NDL3</a>:
+      A tiny RDP like protocol with no dependencies.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/lua-live">lua-live</a>:
+      Lua modified to allow live program updating.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/angelic">Angelic</a>:
+      Realtime programming language compiled to a custom VM.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/lua-ubjson">lua-ubjson</a>:
+      Universal binary JSON (de)serialization in Lua.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/ubjson.js">ubjson.js</a>:
+      Universal binary JSON (de)serialization in JavaScript.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/PiEGrid">PiEGrid</a>:
+      Simple grid world rendered using SVG.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/typpo.js">typpo.js</a>:
+      Library for packing/unpacking arbitrary C data in JavaScript.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/Wick">Wick</a>:
+      Poorly defined collection of ideas for a dataflow programming language.
+    </li>
+    <li class="project-entry">
+      <a href="https://github.com/zentner-kyle/angel-stage">Angel Stage</a>:
+      Unfinished, minimal RTS.
+    </li>
+  </ul>
+{% endblock content %}

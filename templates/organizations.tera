@@ -1,0 +1,164 @@
+{% extends "shared" %}
+
+{% block title %}Organizations{% endblock title %}
+
+{% block content %}
+    <h2>Oranizations I've Been a Part Of</h2>
+    It's kind of a long list, but I no longer have much to do with most of these.
+    Obviously, they don't endorse me or anything, and I can't speak on their behalf.
+    You might not want to read this list too carefully. It's full of regrets.
+    <ul>
+      <li>
+        <a href="https://pioneers.berkeley.edu/">Pioneers in Engineering</a>
+        <p>
+          I did a lot of volunteer projects with PiE for several years. My
+          first year with them, I helped develop their in house motor
+          controller, the Grizzly Bear. This allowed students to use several
+          more motors on their robots, while having much fewer issues compared
+          to its predecessor. I also developed their field control system, Forsetti.
+        </p>
+        <p>
+          My second year with PiE I helped lead <a
+          href="https://github.com/pioneers/tenshi">Control System Next</a>, an
+          ambitious project to build an extremely inexpensive, highly capable,
+          debuggable, and modular real-time control system. We made significant
+          progress, but achieving acceptable stability under our constraints
+          was very difficult. The amount of work the core team members (myself
+          included) put into this project was insane, and best not repeated
+          here. I've resolved to never work this much ever again, unless it's
+          for a company I own.
+        </p>
+        <p>
+          My third year with PiE I served as Engineering Coordinator and a <a
+          href="https://pioneers.berkeley.edu/programs/past-programs.html">PREP
+          mentor.</a> I found managing 40 volunteer staff to be extremely
+          challenging, especially since most of them were only available for
+          the same five hours a week. Ultimately, this contributed to me
+          canceling the Control System Next project. That's probably one of my
+          most painful yet proud moments of working in PiE. I also oversaw the
+          begining of its replacement project, which was used during the 2016
+          and 2017 PiE seasons.
+        </p>
+      </li>
+      <li>
+        <a href="http://snap.berkeley.edu/">Snap!</a> /
+        <a href="http://bjc.berkeley.edu/">The Beauty and Joy of Computing</a>
+        <p>
+          I worked with this group part-time for about a year working on a handful of projects.
+          Mostly, I hacked together an system originally designed for <a
+          href="https://hourofcode.com/">Hour of Code</a>. The system was never
+          officially included in Hour of Code, as far as I know. However, if it
+          is available <a href="http://snap.berkeley.edu/hoc/">here.</a> I'm
+          personally embarrased that it still has a "Chrome only" page.
+          I also wrote a server to allow storing Snap! projects. However, no one
+          ever wrote a user interface, and I believe it was never actually used.
+        </p>
+      </li>
+      <li>
+        <a href="http://gamescrafters.berkeley.edu/">GamesCrafters</a>
+        <p>
+          I was in this undergraduate research group for 3 and a half years. I
+          was one of leaders for two and a half years, and the only leader for
+          roughly a year.
+        </p>
+        <p>
+          The group declined in size significantly under my leadership, and I
+          don't know why. I feel personally responsible, but I don't know what
+          I could have done better, especially since I was pretty busy.
+        </p>
+        <p>
+          This group is now lead by <a
+          href="https://github.com/thyrgle">Christopher Sumnicht</a>, who has
+          been keeping the group together very well, despite me basically just
+          throwing the leadership role at him.
+        </p>
+      </li>
+      <li>
+        <a href="https://x.company/">
+          Google Robotics / [X]
+        </a>
+        <p>
+          Not much I can say about this one. I interned there fulltime for a
+          semester. I met some really amazing people who I was honored to work
+          with, and really felt accepted by them.  It was awesome getting to
+          work with real robots fulltime. I was also able to make a real
+          contribution, despite my relative inexperience.  The 150 minute
+          commute each way was awful though. If there were a similar place in
+          the future, I would probably go.
+        </p>
+      </li>
+      <li>
+        <a href="https://mozilla.com/">
+          Mozilla
+        </a>
+        <p>
+          I interned here my last summer at UC Berkeley. I feel like I wasn't
+          able to have any impact, despite putting more effort than I had on
+          any other internship. I chose to implement CSS Containment. However,
+          the spec was still changing frequently. Furthermore, I was never able
+          to find an efficient way of implementing style containment, so the
+          feature could never even be landed. This was likely just a bad
+          project for an intern. I did learn a lot about HTML layout, which
+          lead me to briefly contribute to <a href="https://servo.org">Servo.</a>
+        </p>
+        <p>
+          I met some people I would still like to call friends. It was also
+          awesome to be able to eat lunch with the Mozilla Research group every
+          day. If there were a place for me there, I likely would go back.
+        </p>
+      </li>
+      <li>
+        <a href="https://www.windriver.com/products/vxworks/">
+          Wind River / VxWorks CoreOS
+        </a>
+        <p>
+          I interned here my first summer at UC Berkeley. It was pretty cool to
+          work on VxWorks, in a lot of ways. I had a great manager. I wish I'd
+          listened to my team mates a bit more. If there were a place for me to
+          advance my career there, I might go back.
+        </p>
+      </li>
+      <li>
+        <a href="https://www.qualcomm.com/">
+          Qualcomm
+        </a>
+        <p>
+          I interned here. My team did a great job finding intern projects for
+          me to work on, and were very friendly. San Diego is also a nice
+          location. However, there's probably not a place for me to work on
+          software there.
+        </p>
+      </li>
+      <li>
+        <a href="http://www.sdsc.edu/education_and_training/internships.html">
+          San Diego Supercomputer Center
+        </a>
+        <p>
+          I interned here for two summers. It was a good experience, although I
+          wish I had applied to work on software more. I had no idea how rare
+          my skills were back then.
+        </p>
+      </li>
+      <li>
+        <a href="http://rivervalleyhigh.org/">
+          River Valley Charter School
+        </a>
+        <p>
+          My middle school and high school. I would recommend it to any
+          self-motivated students in the San Diego area who can coexist with
+          very religious people. There is no other way I would have been able
+          to get as good of a high school education, given my circumstances.
+        </p>
+      </li>
+      <li>
+        <a href="http://berkeley.edu/">
+          UC Berkeley
+        </a>
+        <p>
+          Where I went to college / university. It's a big and complicated
+          place. The classes were good, and the faculty were friendly and
+          helpful.
+        </p>
+      </li>
+    </ul>
+{% endblock content %}

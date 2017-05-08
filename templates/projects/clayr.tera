@@ -1,0 +1,12 @@
+{% extends "shared" %}
+
+{% block title %}clayr{% endblock title %}
+
+{% block content %}
+  <h2>clayr</h2>
+  <p>
+    A program for 3D digital art in Virtual Reality,
+    written in Rust for the HTC Vive.
+    It is very incomplete, and currently only supports painting a single tetrahedron.
+  </p>
+{% endblock content %}

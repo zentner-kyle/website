@@ -1,0 +1,11 @@
+{% extends "shared" %}
+
+{% block title %}video-space{% endblock title %}
+
+{% block content %}
+  <h2>video-space</h2>
+  <p>
+    A couple experiments to build a video sequence predicting autoencoder.
+    Mostly I've just been learning Tensorflow.
+  </p>
+{% endblock content %}

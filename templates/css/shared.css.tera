@@ -1,0 +1,43 @@
+html {
+  font-family: sans;
+  background: #222;
+  color: #eee;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header-entry {
+  padding: 4px;
+  display: block;
+  float: left;
+  padding-right: 16px;
+  border-left: 8px solid #55f;
+  text-decoration: none;
+  color: #eee;
+  background: #444;
+}
+
+a {
+  color: #45f;
+  text-decoration: none;
+}
+
+#header {
+  overflow: auto;
+  background: #333;
+}
+
+#content {
+  margin: 8px;  
+}
+
+#footer {
+  padding: 4px 8px;
+  background: #333;
+}

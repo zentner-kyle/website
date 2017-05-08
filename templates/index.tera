@@ -1,0 +1,13 @@
+{% extends "shared" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <h2>Kyle Zentner's Homepage</h2>
+    <p>
+      Congratulation! You've found my homepage.
+
+      There's not much to see here, since I don't have any good reason to put anything here.
+      In fact, this website mostly exists to <a href="/projects/">list my projects.</a>
+    </p>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "shared" %}
+
+{% block title %}rlog{% endblock title %}
+
+{% block content %}
+  <h2>rlog</h2>
+  <p>
+    An implementation of Datalog in Rust.
+    Currently only supports in-memory truth tables.
+    Provides various APIs for operating on Datalog programs in unusual ways.
+    <ul>
+      <li>Cause tracking</li>
+      <li>Computing non-binary truth values</li>
+      <li>Reverse-mode automatic differentiation for non-binary truth values</li>
+      <li>Program mutation (WIP)</li>
+      <li>Genetic optimization (WIP)</li>
+    </ul>
+    Will probably be open-sourced when I detangle the weird / <a
+    href="/projects/blank">blank specific</a> features from the normal ones.
+  </p>
+{% endblock content %}

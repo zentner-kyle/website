@@ -1,0 +1,27 @@
+{% extends "shared" %}
+
+{% block title %}blank{% endblock title %}
+
+{% block content %}
+  <h2>blank</h2>
+  <p>
+    When I was leading GamesCrafters, I was trying to come up with interesting future projects.
+    One idea was to build a system capable of learning game rules "automatically."
+    After some thought and discussion with others, it appears that no one knows
+    how to do this well, but that it should be possible. I believe that such a
+    system would represent a relatively unexplored area of AI research.
+  </p>
+  <p>
+    Originally, I intended to create a DSL for describing game rules, and then
+    use CEGIS or some other program synthesis technique to create programs
+    encoding the rules. Some of these ideas were explored in <a
+    href="https://github.com/zentner-kyle/rvlvr">rvlvr</a>. I may revisit this
+    approach in the future.
+  </p>
+  <p>
+    I found that Datalog is capable of describing the rules of almost all board
+    games with relative ease. Unfortunately, very little work has been done on
+    synthesizing logical programs. I've begun working on the tools necessary in
+    my <a href="/projects/rlog">rlog</a> project.
+  </p>
+{% endblock content %}
