@@ -1,6 +1,6 @@
 {% extends "shared" %}
 
-{% block title %}Home{% endblock title %}
+{% block title %}Projects{% endblock title %}
 
 {% block head %}
     {{ super() }}
