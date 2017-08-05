@@ -11,7 +11,8 @@ extern crate serde;
 extern crate serde_json;
 
 extern crate regex;
-#[macro_use] extern crate lazy_static;
+#[macro_use]
+extern crate lazy_static;
 
 use regex::Regex;
 
@@ -20,13 +21,11 @@ use rocket::request::FromParam;
 use std::path::{Path, PathBuf};
 
 #[derive(Serialize)]
-struct Empty {
-}
+struct Empty {}
 
 impl Empty {
     fn new() -> Self {
-        Empty {
-        }
+        Empty {}
     }
 }
 
@@ -45,13 +44,18 @@ pub struct ProjectName(PathBuf);
 impl<'a> FromParam<'a> for ProjectName {
     type Error = &'a str;
 
-    fn from_param(param: &'a str) -> Result<Self, &'a str> {
+    fn from_param(param: &'a rocket::http::RawStr) -> Result<Self, &'a str> {
         lazy_static! {
             static ref PROJECT_NAME_RE: Regex = Regex::new(r"^[A-z0-9\-]+$").unwrap();
         }
+        let param: &str = param.as_ref();
         let path = PathBuf::from("projects").join(param);
         println!("path = {:?}", path);
-        if PROJECT_NAME_RE.is_match(param) && Path::new("templates").join(&path).with_extension("tera").exists() {
+        if PROJECT_NAME_RE.is_match(param) &&
+           Path::new("templates")
+               .join(&path)
+               .with_extension("tera")
+               .exists() {
             Ok(ProjectName(path))
         } else {
             Err(param)
@@ -61,7 +65,7 @@ impl<'a> FromParam<'a> for ProjectName {
 
 #[get("/projects/<name>")]
 fn projects(name: ProjectName) -> Template {
-    Template::render(name.0.to_str().unwrap(), &Empty::new())
+    Template::render(name.0.to_str().unwrap().to_owned(), &Empty::new())
 }
 
 #[get("/blog")]
@@ -88,7 +92,12 @@ fn internal() -> Template {
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![index, projects_index, projects, blog_index, organizations_index])
+        .mount("/",
+               routes![index,
+                       projects_index,
+                       projects,
+                       blog_index,
+                       organizations_index])
         .catch(errors![not_found, internal])
         .launch();
 }
