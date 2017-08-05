@@ -1,5 +1,5 @@
 html {
-  font-family: sans;
+  font-family: sans-serif;
   background: #222;
   color: #eee;
 }
@@ -17,10 +17,19 @@ body {
   display: block;
   float: left;
   padding-right: 16px;
-  border-left: 8px solid #55f;
   text-decoration: none;
   color: #eee;
   background: #444;
+  width: 33.333333%;
+  border-left: 8px solid #55f;
+}
+
+@media (max-width: 400px) {
+  .header-entry {
+    width: 100%;
+    border-top: 6px solid #222;
+    border-left: 6px solid #55f;
+  }
 }
 
 a {
