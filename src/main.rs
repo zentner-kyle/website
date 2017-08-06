@@ -92,6 +92,7 @@ fn internal() -> Template {
 
 fn main() {
     rocket::ignite()
+        .attach(Template::fairing())
         .mount("/",
                routes![index,
                        projects_index,
